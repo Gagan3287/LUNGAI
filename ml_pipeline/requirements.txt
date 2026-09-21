@@ -1,0 +1,22 @@
+"""
+requirements.txt — Python dependencies for LungAI ML Pipeline (ml_pipeline/)
+=============================================================================
+Install before running any ml_pipeline scripts:
+    pip install -r ml_pipeline/requirements.txt
+
+NOTE: torch and torchvision version pins below target CUDA 12.1.
+For CPU-only development, use the same versions — they work on CPU by default.
+For a different CUDA version: https://pytorch.org/get-started/locally/
+
+NOT installed in this session — no GPU or NIH dataset available for training.
+"""
+torch>=2.2.0
+torchvision>=0.17.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+pillow>=10.2.0
+pandas>=2.2.0
+tqdm>=4.66.0
+# Optional: for overlay_heatmap_on_xray() in gradcam.py
+# opencv-python>=4.9.0
+# matplotlib>=3.8.0

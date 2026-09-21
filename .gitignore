@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Backend uploads
+backend/app/uploads/
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+
+# SQLite database
+backend/*.db
+backend/*.sqlite3
+
+# ML Pipeline dataset and checkpoints
+ml_pipeline/checkpoints/
+ml_pipeline/checkpoints/*
+ml_pipeline/data/
+ml_pipeline/data/*
+*.pth
+*.pt
+*.h5
+*.ckpt
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
